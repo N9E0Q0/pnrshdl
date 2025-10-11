@@ -75,6 +75,8 @@ type Passenger struct {
 	AcctLocked              string
 	PasswordCreated         string
 	LanguagePromptIndicator string
+	CurrentPassengerSeat	string
+	CurrentPassengerCompanionSeat	string
 }
 
 type SSR struct {

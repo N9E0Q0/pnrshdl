@@ -86,6 +86,8 @@ func convertPassengers(res RetrievePnrResponse, pnr *PNR) {
 			AcctLocked:	pax.AcctLocked,
 			PasswordCreated:	pax.PasswordCreated,
 			LanguagePromptIndicator:	pax.LanguagePromptIndicator,
+			CurrentPassengerSeat:	pax.FlightSeats.DomainObjectList.DomainObject.CurrentPassengerSeat,
+			CurrentPassengerCompanionSeat: pax.FlightSeats.DomainObjectList.DomainObject.CurrentPassengerCompanionSeat,
 		}
 
 		if convertedPax.CheckedIn {
