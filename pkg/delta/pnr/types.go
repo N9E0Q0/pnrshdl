@@ -32,7 +32,7 @@ type Flight struct {
 	ScheduledDeparture     string
 	ScheduledArrival       string
 	FlightNumber           string
-	SeatAssigned           string
+	FlightTime	           string
 }
 
 type Passenger struct {
