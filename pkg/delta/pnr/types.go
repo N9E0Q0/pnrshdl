@@ -16,6 +16,7 @@ type PNR struct {
 type Remark struct {
 	FreeFormText string
 	RemarkType   string
+	RemarkLevel  string
 }
 
 type Flight struct {

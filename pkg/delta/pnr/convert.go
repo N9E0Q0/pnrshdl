@@ -19,6 +19,7 @@ func convertRemarks(res RetrievePnrResponse, pnr *PNR) {
 		pnr.Remarks = append(pnr.Remarks, Remark{
 			FreeFormText: remark.FreeFormText,
 			RemarkType:   remark.RemarkType,
+			RemarkLevel:   remark.RemarkLevel,
 		})
 	}
 }
@@ -86,8 +87,6 @@ func convertPassengers(res RetrievePnrResponse, pnr *PNR) {
 			AcctLocked:	pax.AcctLocked,
 			PasswordCreated:	pax.PasswordCreated,
 			LanguagePromptIndicator:	pax.LanguagePromptIndicator,
-			CurrentPassengerSeat:	pax.FlightSeats.DomainObjectList.DomainObject.CurrentPassengerSeat,
-			CurrentPassengerCompanionSeat: pax.FlightSeats.DomainObjectList.DomainObject.CurrentPassengerCompanionSeat,
 		}
 
 		if convertedPax.CheckedIn {
