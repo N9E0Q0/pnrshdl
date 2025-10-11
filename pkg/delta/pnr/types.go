@@ -47,6 +47,11 @@ type Passenger struct {
 	EmerContactInfoDeclined string
 	TravelInfoProvided      string
 	Ptc                     string
+	Selectee                  string
+	PremiumPassengerIndicator string
+	ExitRowEligible           string
+	CheckedInOnALS            string
+	DoNotBoard                string
 }
 
 type SSR struct {

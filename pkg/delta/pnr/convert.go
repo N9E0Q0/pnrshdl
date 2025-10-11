@@ -59,6 +59,11 @@ func convertPassengers(res RetrievePnrResponse, pnr *PNR) {
 			EmerContactInfoDeclined:	pax.EmerContactInfoDeclined,
 			TravelInfoProvided:	pax.TravelInfoProvided,
 			Ptc:	pax.Ptc,
+			Selectee:	pax.Selectee,
+			PremiumPassengerIndicator:	pax.PremiumPassengerIndicator,
+			ExitRowEligible:	pax.ExitRowEligible,
+			CheckedInOnALS:	pax.CheckedInOnALS,
+			DoNotBoard:	pax.DoNotBoard,
 		}
 
 		if convertedPax.CheckedIn {

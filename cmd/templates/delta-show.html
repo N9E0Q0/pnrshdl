@@ -80,7 +80,8 @@
                     <h5>{{.Name}} <span class="badge bg-success">Checked In</span> <span class="badge bg-primary">{{.Status}}</span></h5>
                     {{else}}
                     <h5>{{.Name}} <span class="badge bg-secondary">Not Checked In</span> <span class="badge bg-primary">{{.Status}}</span></h5>
-                    CID{{.CustomerID}} FNIN{{.FirstNIN}} LNIN{{.LastNIN}} PTC {{.Ptc}}
+                    CID{{.CustomerID}}<br>
+                     FNIN{{.FirstNIN}}<br> LNIN{{.LastNIN}} <br> PTC {{.Ptc}} Selectee {{.Selectee}} <br> Prem {{.PremiumPassengerIndicator}} <br> Exit Row {{.ExitRowEligible}} <br> CheckedInOnALS {{.CheckedInOnALS}} <br> DoNotBoard {{.DoNotBoard}}
                     {{end}}
         
                     <h6>Filtered SSRs</h6>
