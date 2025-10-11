@@ -41,6 +41,13 @@ type Passenger struct {
 	CheckedIn  bool
 	SSRs       []SSR
 	Status     string
+	FirstNIN                string
+	LastNIN                 string
+	GroupLeader             string
+	EmerContactInfoDeclined string
+	CheckedIn               string
+	TravelInfoProvided      string
+	Ptc                     string
 }
 
 type SSR struct {
