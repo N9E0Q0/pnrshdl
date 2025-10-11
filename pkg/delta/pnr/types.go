@@ -78,6 +78,13 @@ type Passenger struct {
 	LanguagePromptIndicator string
 	CurrentPassengerSeat	string
 	CurrentPassengerCompanionSeat	string
+	ProgramName                string
+	ID                         string
+	AliasAcctFoundInd          string
+	MembershipStatusCd         string
+	MembershipStatusDesc       string
+	PinFoundInd                string
+	PayWithMilesEligibilityInd string
 }
 
 type SSR struct {

@@ -87,6 +87,12 @@ func convertPassengers(res RetrievePnrResponse, pnr *PNR) {
 			AcctLocked:	pax.AcctLocked,
 			PasswordCreated:	pax.PasswordCreated,
 			LanguagePromptIndicator:	pax.LanguagePromptIndicator,
+			ProgramName:     pax.LoyaltyAccounts.DomainObjectList.DomainObject.ProgramName,
+			ID:     pax.LoyaltyAccounts.DomainObjectList.DomainObject.ID,
+			AliasAcctFoundInd:     pax.LoyaltyAccounts.DomainObjectList.DomainObject.AliasAcctFoundInd,
+			MembershipStatusDesc:     pax.LoyaltyAccounts.DomainObjectList.DomainObject.MembershipStatusDesc,
+			PinFoundInd:     pax.LoyaltyAccounts.DomainObjectList.DomainObject.PinFoundInd,
+			PayWithMilesEligibilityInd:     pax.LoyaltyAccounts.DomainObjectList.DomainObject.PayWithMilesEligibilityInd,
 		}
 
 		if convertedPax.CheckedIn {
