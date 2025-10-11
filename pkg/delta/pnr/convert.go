@@ -57,7 +57,6 @@ func convertPassengers(res RetrievePnrResponse, pnr *PNR) {
 			LastNIN:	pax.LastNIN,
 			GroupLeader:	pax.GroupLeader,
 			EmerContactInfoDeclined:	pax.EmerContactInfoDeclined,
-			CheckedIn:	pax.CheckedIn,
 			TravelInfoProvided:	pax.TravelInfoProvided,
 			Ptc:	pax.Ptc,
 		}
