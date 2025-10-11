@@ -36,7 +36,7 @@ type Flight struct {
 	UpgradeStatusWCabin        string
 	UpgradeCabinDescription    string
 	UpgradeWCabinDescription   string
-	BrandAssociatedCabinId     string
+	BrandAssociatedCabinID     string
 	EquipmentChange         string
 	DlMarketedCodeshare     string
 	DlConnectionCarrier     string
@@ -51,6 +51,7 @@ type Flight struct {
 	SeatMapEligible string
 	AccumulatedFlightTime string
 	SchedChangeType       string
+	BrandAssociatedCabinId string
 }
 
 type Passenger struct {

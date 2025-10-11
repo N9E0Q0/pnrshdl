@@ -44,7 +44,7 @@ func convertFlights(res RetrievePnrResponse, pnr *PNR) {
 				UpgradeStatusWCabin:        flight.UpgradeStatusWCabin,
 				UpgradeCabinDescription:    flight.UpgradeCabinDescription,
 				UpgradeWCabinDescription:   flight.UpgradeWCabinDescription,
-				BrandAssociatedCabinID:     flight.BrandAssociatedCabinID,
+				BrandAssociatedCabinId:	flight.BrandAssociatedCabinId,
 				EquipmentChange:         flight.EquipmentChange,
 				DlMarketedCodeshare:     flight.DlMarketedCodeshare,
 				DlConnectionCarrier:     flight.DlConnectionCarrier,
