@@ -45,7 +45,6 @@ type Passenger struct {
 	LastNIN                 string
 	GroupLeader             string
 	EmerContactInfoDeclined string
-	CheckedIn               string
 	TravelInfoProvided      string
 	Ptc                     string
 }
