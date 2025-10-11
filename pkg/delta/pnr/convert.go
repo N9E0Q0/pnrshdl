@@ -40,6 +40,7 @@ func convertFlights(res RetrievePnrResponse, pnr *PNR) {
 				ScheduledDeparture:     flight.ScheduledDepartureDateTime,
 				ScheduledArrival:       flight.ScheduledArrivalDateTime,
 				FlightNumber:           flight.FlightNo,
+				SeatAssigned            flight.SeatAssigned,
 			})
 		}
 	}
