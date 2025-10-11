@@ -65,7 +65,7 @@
                     </tr>
                     
                     <tr>
-                        <td><strong>Seat Assigned</strong></td>
+                        <td><strong>Flight Duration</strong></td>
                         <td>{{.FlightTime}}</td>
                     </tr>
                 </tbody>
@@ -79,7 +79,7 @@
                     {{if .CheckedIn}}
                     <h5>{{.Name}} <span class="badge bg-success">Checked In</span> <span class="badge bg-primary">{{.Status}}</span></h5>
                     {{else}}
-                    <h5>{{.Name}} <span class="badge bg-secondary">Not Checked In</span> <span class="badge bg-primary">{{.Status}}</span></h5>
+                    <h5>{{.Name}} <span class="badge bg-secondary">Not Checked In</span> <span class="badge bg-primary">{{.Status}}</span>{{.CustomerID}}{{.FirstNIN}}{{.LastNIN}}</h5>
                     {{end}}
         
                     <h6>Filtered SSRs</h6>
