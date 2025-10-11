@@ -33,6 +33,22 @@ type Flight struct {
 	ScheduledArrival       string
 	FlightNumber           string
 	FlightTime	           string
+	UpgradeStatusWCabin        string `xml:"upgradeStatusWCabin"`
+										UpgradeCabinDescription    string `xml:"upgradeCabinDescription"`
+										UpgradeWCabinDescription   string `xml:"upgradeWCabinDescription"`
+										BrandAssociatedCabinId     string `xml:"brandAssociatedCabinId"`
+										EquipmentChange         string `xml:"equipmentChange"`
+										CurrentActionCode       string `xml:"currentActionCode"`
+										PreviousActionCode      string `xml:"previousActionCode"`
+										DlMarketedCodeshare     string `xml:"dlMarketedCodeshare"`
+										DlConnectionCarrier     string `xml:"dlConnectionCarrier"`
+										GroundHandled           string `xml:"groundHandled"`
+										IropType                string `xml:"iropType"`
+										CleanedFlag             string `xml:"cleanedFlag"`
+										MisconnectFlag          string `xml:"misconnectFlag"`
+										PotentialMisconnectFlag string `xml:"potentialMisconnectFlag"`
+										BasicEconomy            string `xml:"basicEconomy"`
+										SeatAssigned            string `xml:"seatAssigned"`
 }
 
 type Passenger struct {
