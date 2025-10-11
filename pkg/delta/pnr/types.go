@@ -52,6 +52,10 @@ type Passenger struct {
 	ExitRowEligible           string
 	CheckedInOnALS            string
 	DoNotBoard                string
+	SkyClubPurchaseEligible string
+	AcctLocked              string
+	PasswordCreated         string
+	LanguagePromptIndicator string
 }
 
 type SSR struct {

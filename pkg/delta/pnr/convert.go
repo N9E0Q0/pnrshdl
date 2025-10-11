@@ -64,6 +64,10 @@ func convertPassengers(res RetrievePnrResponse, pnr *PNR) {
 			ExitRowEligible:	pax.ExitRowEligible,
 			CheckedInOnALS:	pax.CheckedInOnALS,
 			DoNotBoard:	pax.DoNotBoard,
+			SkyClubPurchaseEligible:	pax.SkyClubPurchaseEligible,
+			AcctLocked:	pax.AcctLocked,
+			PasswordCreated:	pax.PasswordCreated,
+			LanguagePromptIndicator:	pax.LanguagePromptIndicator,
 		}
 
 		if convertedPax.CheckedIn {
