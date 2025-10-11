@@ -1,7 +1,7 @@
 {
-    "name": "pnr.sh",
+    "name": "pnr.sh DLTerm",
     "description": "View hidden information in airline reservations.",
-    "repository": "https://github.com/iangcarroll/pnrsh",
+    "repository": "https://github.com/N9E0Q0/pnrshdl",
     "keywords": ["go", "airline", "pnr"]
   }
   

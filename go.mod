@@ -1,4 +1,4 @@
-module github.com/pnrsh/pnrsh
+module github.com/N9E0Q0/pnrshdl
 
 // +heroku goVersion go1.21
 go 1.21

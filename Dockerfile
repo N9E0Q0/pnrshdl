@@ -8,5 +8,5 @@ FROM debian:buster-slim
 
 EXPOSE 8080
 COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
-COPY --from=builder /build/cmd/cmd /pnrsh
-ENTRYPOINT /pnrsh
+COPY --from=builder /build/cmd/cmd /pnrshdl
+ENTRYPOINT /pnrshdl
