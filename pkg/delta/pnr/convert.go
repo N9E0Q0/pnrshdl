@@ -53,13 +53,13 @@ func convertPassengers(res RetrievePnrResponse, pnr *PNR) {
 			CustomerID: pax.CustomerId,
 			CheckedIn:  pax.CheckedIn != "false",
 			Status:     pax.LoyaltyAccounts.DomainObjectList.DomainObject.MembershipStatusCd,
-			FirstNIN:	pax.FirstNIN
-			LastNIN:	pax.LastNIN
-			GroupLeader:	pax.GroupLeader
-			EmerContactInfoDeclined:	pax.EmerContactInfoDeclined
-			CheckedIn:	pax.CheckedIn
-			TravelInfoProvided:	pax.TravelInfoProvided
-			Ptc:	pax.Ptc
+			FirstNIN:	pax.FirstNIN,
+			LastNIN:	pax.LastNIN,
+			GroupLeader:	pax.GroupLeader,
+			EmerContactInfoDeclined:	pax.EmerContactInfoDeclined,
+			CheckedIn:	pax.CheckedIn,
+			TravelInfoProvided:	pax.TravelInfoProvided,
+			Ptc:	pax.Ptc,
 		}
 
 		if convertedPax.CheckedIn {
