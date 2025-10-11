@@ -41,24 +41,24 @@ func convertFlights(res RetrievePnrResponse, pnr *PNR) {
 				ScheduledArrival:       flight.ScheduledArrivalDateTime,
 				FlightNumber:           flight.FlightNo,
 				FlightTime:           	flight.FlightTime,
-				UpgradeStatusWCabin        flight.UpgradeStatusWCabin
-				UpgradeCabinDescription    flight.UpgradeCabinDescription
-				UpgradeWCabinDescription   flight.UpgradeWCabinDescription
-				BrandAssociatedCabinId     flight.BrandAssociatedCabinID
-				EquipmentChange         flight.EquipmentChange
-				DlMarketedCodeshare     flight.DlMarketedCodeshare
-				DlConnectionCarrier     flight.DlConnectionCarrier
-				GroundHandled           flight.GroundHandled
-				IropType                flight.IropType
-				CleanedFlag             flight.CleanedFlag
-				MisconnectFlag          flight.MisconnectFlag
-				PotentialMisconnectFlag flight.PotentialMisconnectFlag
-				BasicEconomy            flight.BasicEconomy
-				SeatAssigned            flight.SeatAssigned
-				StandbyFlight   flight.StandbyFlight
-				SeatMapEligible flight.SeatMapEligible
-				AccumulatedFlightTime flight.AccumulatedFlightTime
-				SchedChangeType       flight.SchedChangeType
+				UpgradeStatusWCabin        flight.UpgradeStatusWCabin,
+				UpgradeCabinDescription    flight.UpgradeCabinDescription,
+				UpgradeWCabinDescription   flight.UpgradeWCabinDescription,
+				BrandAssociatedCabinId     flight.BrandAssociatedCabinID,
+				EquipmentChange         flight.EquipmentChange,
+				DlMarketedCodeshare     flight.DlMarketedCodeshare,
+				DlConnectionCarrier     flight.DlConnectionCarrier,
+				GroundHandled           flight.GroundHandled,
+				IropType                flight.IropType,
+				CleanedFlag             flight.CleanedFlag,
+				MisconnectFlag          flight.MisconnectFlag,
+				PotentialMisconnectFlag flight.PotentialMisconnectFlag,
+				BasicEconomy            flight.BasicEconomy,
+				SeatAssigned            flight.SeatAssigned,
+				StandbyFlight   flight.StandbyFlight,
+				SeatMapEligible flight.SeatMapEligible,
+				AccumulatedFlightTime flight.AccumulatedFlightTime,
+				SchedChangeType       flight.SchedChangeType,
 			})
 		}
 	}
