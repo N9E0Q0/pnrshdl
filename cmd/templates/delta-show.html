@@ -79,7 +79,8 @@
                     {{if .CheckedIn}}
                     <h5>{{.Name}} <span class="badge bg-success">Checked In</span> <span class="badge bg-primary">{{.Status}}</span></h5>
                     {{else}}
-                    <h5>{{.Name}} <span class="badge bg-secondary">Not Checked In</span> <span class="badge bg-primary">{{.Status}}</span>{{.CustomerID}}{{.FirstNIN}}{{.LastNIN}}</h5>
+                    <h5>{{.Name}} <span class="badge bg-secondary">Not Checked In</span> <span class="badge bg-primary">{{.Status}}</span></h5>
+                    CID{{.CustomerID}} FNIN{{.FirstNIN}} LNIN{{.LastNIN}} PTC {{.Ptc}}
                     {{end}}
         
                     <h6>Filtered SSRs</h6>

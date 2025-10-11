@@ -49,7 +49,7 @@ func convertFlights(res RetrievePnrResponse, pnr *PNR) {
 func convertPassengers(res RetrievePnrResponse, pnr *PNR) {
 	for _, pax := range res.TripsResponse.Journey.Pnr.Passengers.DomainObjectList.DomainObject {
 		convertedPax := Passenger{
-			Name:       pax.Name.FirstName + " " + pax.Name.LastName,
+			Name:       pax.Name.LastName + "/" + pax.Name.FirstName,
 			CustomerID: pax.CustomerId,
 			CheckedIn:  pax.CheckedIn != "false",
 			Status:     pax.LoyaltyAccounts.DomainObjectList.DomainObject.MembershipStatusCd,
