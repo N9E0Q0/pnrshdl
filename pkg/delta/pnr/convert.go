@@ -140,7 +140,7 @@ func convertTickets(res RetrievePnrResponse, pnr *PNR) {
 				PlaceOfIssue:	ticket.PlaceOfIssue,
 				IssueCity:	ticket.IssueCity,
 				IssueLocation:	ticket.IssueLocation,
-				IssuingAgentId:	ticket.IssingAgentId,
+				IssuingAgentId:	ticket.IssuingAgentId,
 			})
 		}
 	}
