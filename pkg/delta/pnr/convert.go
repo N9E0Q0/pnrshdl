@@ -137,6 +137,10 @@ func convertTickets(res RetrievePnrResponse, pnr *PNR) {
 				PassengerName:          pax.Name.FirstName + " " + pax.Name.LastName,
 				NumCoupons:             uint64(len(ticket.TicketCoupons.DomainObjectList.DomainObject)),
 				ValidatedAgainstCoupon: couponsMatchFlights(res, ticket.Number),
+				PlaceOfIssue:	ticket.PlaceOfIssue,
+				IssueCity:	ticket.IssueCity,
+				IssueLocation:	ticket.IssueLocation,
+				IssuingAgentId:	ticket.IssueAgentId,
 			})
 		}
 	}

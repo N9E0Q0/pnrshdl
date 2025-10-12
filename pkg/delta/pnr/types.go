@@ -106,6 +106,10 @@ type Ticket struct {
 	PassengerName          string
 	NumCoupons             uint64
 	ValidatedAgainstCoupon bool
+	PlaceOfIssue   string
+	IssueCity      string
+	IssueLocation  string
+	IssuingAgentId string
 }
 
 type Fare struct {

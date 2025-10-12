@@ -19,7 +19,7 @@
 {{range .PNR.Passengers}}
 
 <tr>
-<td width="20px">{{.FirstNIN}}.</td>
+<td width="20px">{{.LastNIN}}.</td>
 <th colspan="7">{{.Name}}</th>
 </tr>
 
@@ -344,7 +344,26 @@
                             <td><strong>Coupons Appear To Cover Entire PNR (experimental)</strong></td>
                             <td>{{.ValidatedAgainstCoupon}}</td>
                         </tr>
-                    </tbody>
+                        
+                        <tr>
+                            <td><strong>Place Of Issue</strong></td>
+                            <td>{{.PlaceOfIssue}}</td>
+                        </tr>
+                        
+                        <tr>
+                            <td><strong>Issue City</strong></td>
+                            <td>{{.IssueCity}}</td>
+                        </tr>
+                        
+                        <tr>
+                            <td><strong>Issue Location</strong></td>
+                            <td>{{.IssueLocation}}</td>
+                        </tr>
+                        
+                        <tr>
+                            <td><strong>Issuing Agent ID</strong></td>
+                            <td>{{.IssuingAgentId}}</td>
+                        </tr>
                 </table>
             </div>
         </div>
