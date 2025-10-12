@@ -32,10 +32,7 @@
 
 <td width="20px">1.</td>
 <th colspan="7">{{.MarketingAirlineCode}}{{.FlightNumber}}{{.ClassOfService}} 27OCT1 {{.OriginAirportCode}}{{.DestinationAirportCode}} {{.CurrentActionCode}}1 &nbsp; 100P &nbsp; 430P &nbsp; STBY &nbsp; CI &nbsp;1B
-{{if .DlConnectionCarrier "true"}}
 <BR>&nbsp;&nbsp;OPERATED BY {{.OperatingAirlineCode}}/QUOTE AS DL CNXN
-{{else}}
-{{end}}
 </th>
 </tr>
 
@@ -49,14 +46,25 @@
 <th colspan="8">OSI DL FF{{.ID}}-{{.Name}} **{{.Status}}**</th>
 </tr>
 
-{{end}}
 <tr>
 <th colspan="8">GEN FAX- **SSRS PRESENT**</th>
 </tr>
 <tr>
 <th colspan="8">TKT-TK/TE/TL30/17OCT1539/ATL</th>
 </tr>
+ {{range .SSRs}}
+                            <tr>
+                                <td>{{.Type}}&nbsp;{{.Remark}}</td>
+                            </tr>
+                            {{end}}
+
+{{range .PNR.Flags}}
+                <tr>
+                    <td>{{.Name}} &nbsp; {{.Value}}</td>
+                </tr>
+            {{end}}
 </tbody>
+{{end}}
 </table>
 
 
