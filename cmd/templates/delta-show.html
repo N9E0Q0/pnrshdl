@@ -16,7 +16,10 @@
       <div class="col">
         <h3>Flights</h3>
         {{range .PNR.Flights}}
-            <h5><strong>{{.MarketingAirlineCode}}{{.FlightNumber}}</strong> {{.OriginAirportCode}} ✈️ {{.DestinationAirportCode}} <span class="badge bg-primary">{{.CurrentActionCode}}</span></h5>
+        
+ {{.MarketingAirlineCode}}{{.FlightNumber}}{{.ClassOfService}} 27OCT1 {{.OriginAirportCode}}{{.DestinationAirportCode}} {{.CurrentActionCode}}1 &nbsp; 100P &nbsp; 430P &nbsp; STBY &nbsp; CI &nbsp;1B
+        
+<!-->            <h5><strong>{{.MarketingAirlineCode}}{{.FlightNumber}}</strong> {{.OriginAirportCode}} ✈️ {{.DestinationAirportCode}} <span class="badge bg-primary">{{.CurrentActionCode}}</span></h5>
             <table class="table">
                 <tbody>
                     <tr>
@@ -149,6 +152,7 @@
                     </tr>
                 </tbody>
             </table>
+            -->
         {{end}}
 
         <h3>Passengers</h3>
