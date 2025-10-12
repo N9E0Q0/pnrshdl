@@ -11,7 +11,7 @@
     {{ end }}
 
     <hr />
-<table style="width: 500px;">
+<table style="width: 650px;">
 <tbody>
 <tr>
 <th colspan="2">DL RECORD LOCATOR {{.ConfirmationCode}} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ETKT PRESENT-SEE ETR* and *TI</th>
@@ -38,9 +38,13 @@
 <tr>
 <th colspan="8">HA FAX- ** SSRS PRESENT ** UPGRADE DATA PRESENT &gt;*UPG</th>
 </tr>
+{{range .PNR.Passengers}}
+
 <tr>
-<th colspan="8">OSI DL FF9362146087-SKOK/MATTHEWAARON **DM**</th>
+<th colspan="8">OSI DL FF{{.ID}}-{{.Name}} **{{.Status}}**</th>
 </tr>
+
+{{end}}
 <tr>
 <th colspan="8">GEN FAX- **SSRS PRESENT**</th>
 </tr>
