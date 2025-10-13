@@ -3,10 +3,10 @@ package main
 import (
 	"net/http"
 
-	aeromexico "github.com/N9E0Q0/pnrshdl/pkg/aeromexico/pnr"
-	aircanada "github.com/N9E0Q0/pnrshdl/pkg/aircanada/pnr"
+	// aeromexico "github.com/N9E0Q0/pnrshdl/pkg/aeromexico/pnr"
+	// aircanada "github.com/N9E0Q0/pnrshdl/pkg/aircanada/pnr"
 	delta "github.com/N9E0Q0/pnrshdl/pkg/delta/pnr"
-	united "github.com/N9E0Q0/pnrshdl/pkg/united/pnr"
+	// united "github.com/N9E0Q0/pnrshdl/pkg/united/pnr"
 )
 
 func DeltaRetrieveHandler(w http.ResponseWriter, r *http.Request) {
@@ -33,7 +33,7 @@ func DeltaRetrieveHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	t := Parse("delta-show.html")
+	t := Parse("DLTERM32.html")
 
 	t.Execute(w, struct {
 		PNR              delta.PNR
