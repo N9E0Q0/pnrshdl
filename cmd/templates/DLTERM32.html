@@ -17,12 +17,12 @@
 <th colspan="2">DL RECORD LOCATOR {{.ConfirmationCode}} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ETKT PRESENT-SEE ETR* and *TI</th>
 </tr>
 
-
+{{range .PNR.Passengers}}
 <tr>
-<td width="20px">.LastNIN.</td>
-<th colspan="7">.Name</th>
+<td width="20px">{{.LastNIN}}.</td>
+<th colspan="7">{{.Name}}</th>
 </tr>
-
+{{end}}
 
 <tr>
 <th colspan="8">QTS1VRN1XTE/0G03/8675309/CHI/1V/T/US</th>
