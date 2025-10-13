@@ -35,30 +35,12 @@ func main() {
 	r.HandleFunc("/", HomeHandler).Methods("GET")
 	r.HandleFunc("/help", HelpHandler).Methods("GET")
 
-	if aeromexicoEnabled {
-		r.HandleFunc("/aeromexico", AeromexicoHomeHandler).Methods("GET")
-		r.HandleFunc("/aeromexico", AeromexicoRetrieveHandler).Methods("POST")
-	}
-
-	if aircanadaEnabled {
-		r.HandleFunc("/aircanada", AircanadaHomeHandler).Methods("GET")
-		r.HandleFunc("/aircanada", AircanadaRetrieveHandler).Methods("POST")
-	}
 
 	if deltaEnabled {
 		r.HandleFunc("/delta", DeltaHomeHandler).Methods("GET")
 		r.HandleFunc("/delta", DeltaRetrieveHandler).Methods("POST")
 	}
 
-	if unitedEnabled {
-		r.HandleFunc("/united", UnitedHomeHandler).Methods("GET")
-		r.HandleFunc("/united", UnitedRetrieveHandler).Methods("POST")
-	}
-
-	if virginEnabled {
-		r.HandleFunc("/virgin", VirginHomeHandler).Methods("GET")
-		r.HandleFunc("/virgin", VirginRetrieveHandler).Methods("POST")
-	}
 
 	srv := &http.Server{
 		Handler: r,
