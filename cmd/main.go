@@ -11,11 +11,11 @@ import (
 )
 
 const (
-	aeromexicoEnabled = true
-	aircanadaEnabled  = true
+	aeromexicoEnabled = false
+	aircanadaEnabled  = false
 	deltaEnabled      = true
-	unitedEnabled     = true
-	virginEnabled     = true
+	unitedEnabled     = false
+	virginEnabled     = false
 )
 
 var (
