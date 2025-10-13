@@ -53,6 +53,7 @@ type Flight struct {
 	AccumulatedFlightTime string
 	SchedChangeType       string
 	BrandAssociatedCabinId string
+	EticketEligible			string
 }
 
 type Passenger struct {

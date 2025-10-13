@@ -11,7 +11,7 @@
     {{ end }}
 
     <hr />
-<table style="width: 650px;">
+<table style="width: 650px; font-size: 16px;">
 <tbody>
 <tr>
 <th colspan="2">DL RECORD LOCATOR {{.ConfirmationCode}} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ETKT PRESENT-SEE ETR* and *TI</th>
@@ -54,9 +54,16 @@
 </tr>
  {{range .SSRs}}
                             <tr>
-                                <td>{{.Type}}&nbsp;{{.Remark}}</td>
+                                <th colspan="8">{{.Type}}-&nbsp;{{.Remark}}</th>
                             </tr>
                             {{end}}
+                            
+  {{range .PNR.Tickets}}   
+  <tr>
+  <th></th>
+  </tr>      
+  {{end}}   
+                
 </tbody>
 {{end}}
 </table>
@@ -67,7 +74,7 @@
         <h3>Flights</h3>
         {{range .PNR.Flights}}
         
- {{.MarketingAirlineCode}}{{.FlightNumber}}{{.ClassOfService}} 27OCT1 {{.OriginAirportCode}}{{.DestinationAirportCode}} {{.CurrentActionCode}}1 &nbsp; 100P &nbsp; 430P &nbsp; STBY &nbsp; CI &nbsp;1B
+
         
             <h5><strong>{{.MarketingAirlineCode}}{{.FlightNumber}}</strong> {{.OriginAirportCode}} ✈️ {{.DestinationAirportCode}} <span class="badge bg-primary">{{.CurrentActionCode}}</span></h5>
             <table class="table">
@@ -199,6 +206,10 @@
                     <tr>
                         <td><strong>SeatMapEligible</strong></td>
                         <td>{{.SeatMapEligible}}</td>
+                    </tr>
+                    
+                    <tr>
+                    <th>Eticket: {{.EticketEligible}}
                     </tr>
                 </tbody>
             </table>
