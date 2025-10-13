@@ -63,63 +63,6 @@
 </tbody>
 {{end}}
 </table>
-{{range .PNR.Tickets}}
-        <div class="card">
-            <div class="card-body">
-                <h4>{{.Number}}</h4>
-
-                <table class="table">
-                    <tbody>
-                        <tr>
-                            <td><strong>Status</strong></td>
-                            <td>{{.Status}}</td>
-                        </tr>
-
-                        <tr>
-                            <td><strong>Issue Date</strong></td>
-                            <td>{{.IssueDate}}</td>
-                        </tr>
-
-                        <tr>
-                            <td><strong>Expiration Date</strong></td>
-                            <td>{{.ExpirationDate}}</td>
-                        </tr>
-
-                        <tr>
-                            <td><strong>Passenger</strong></td>
-                            <td>{{.PassengerName}}</td>
-                        </tr>
-
-                        <tr>
-                            <td><strong># of Coupons in Ticket</strong></td>
-                            <td>{{.NumCoupons}}</td>
-                        </tr>
-
-                        <tr>
-                            <td><strong>Coupons Appear To Cover Entire PNR (experimental)</strong></td>
-                            <td>{{.ValidatedAgainstCoupon}}</td>
-                        </tr>
-                        
-                        <tr>
-                            <td><strong>Place Of Issue</strong></td>
-                            <td>{{.PlaceOfIssue}}</td>
-                        </tr>
-                        
-                        <tr>
-                            <td><strong>Issue City</strong></td>
-                            <td>{{.IssueCity}}</td>
-                        </tr>
-                        
-                        <tr>
-                            <td><strong>Issue Location</strong></td>
-                            <td>{{.IssueLocation}}</td>
-                        </tr>
-                        
-                        <tr>
-                            <td><strong>Issuing Agent ID</strong></td>
-                            <td>{{.IssuingAgentId}}</td>
-                        </tr>
-                </table>
 
 
     <div class="row">
