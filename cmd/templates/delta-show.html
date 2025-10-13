@@ -8,7 +8,7 @@
     <div class="alert alert-warning" role="alert">
         <strong>The tickets attached to your reservation have a different fare class than the segments in your reservation.</strong> If your departure date is approaching, this will likely prevent you from checking in, but you can contact Delta to request an immediate reissue of your ticket.
     </div>
-    {{end}}
+    {{ end }}
 
     <hr />
 <table style="width: 650px; font-size: 16px;">
@@ -58,7 +58,15 @@
                             </tr>
                             {{end}}
                             
+<<<<<<< HEAD
    
+=======
+  {{range .PNR.Tickets}}   
+  <tr>
+  <th></th>
+  </tr>      
+  {{end}}   
+>>>>>>> parent of b960f67 (Update delta-show.html)
                 
 </tbody>
 </table>
