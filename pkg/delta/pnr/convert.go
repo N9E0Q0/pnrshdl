@@ -110,7 +110,7 @@ func convertPassengers(res RetrievePnrResponse, pnr *PNR) {
 				Remark: ssr.Remarks.Remark,
 				Type:   ssr.Code,
 				LineNumber:	ssr.LineNumber,
-				Code:	ssr.Code,
+				Code:	ssr.Type,
 				GivenNameNumber:	ssr.GivenNameNumber,
 				LastNameNumber:	ssr.LastNameNumber,
 				SegmentNumber:	ssr.SegmentNumber,
