@@ -2,9 +2,7 @@
 
 {{define "main"}}
 <div class="container">
-    <h2>Confirmation #{{.ConfirmationCode}}</h2>
-
-    {{ if .PNR.ReissueRequired }}
+     {{ if .PNR.ReissueRequired }}
     <div class="alert alert-warning" role="alert">
         <strong>The tickets attached to your reservation have a different fare class than the segments in your reservation.</strong> If your departure date is approaching, this will likely prevent you from checking in, but you can contact Delta to request an immediate reissue of your ticket.
     </div>
@@ -29,8 +27,11 @@
 </tr>
 <tr>
 
+{{range .PNR.Flights}}
+            <h5><strong>{{.MarketingAirlineCode}}{{.FlightNumber}}</strong> {{.OriginAirportCode}} ✈️ {{.DestinationAirportCode}} <span class="badge bg-primary">{{.CurrentActionCode}}</span></h5>
+{{end}}
 
-<td width="20px">1.</td>
+<td width="20px"></td>
 <th colspan="7">DL9999Y 27OCT1 AAAZZZ HK1 &nbsp; 100P &nbsp; 430P &nbsp; STBY &nbsp; CI &nbsp;1B
 <BR>&nbsp;&nbsp;OPERATED BY .OperatingAirlineCode/QUOTE AS DL CNXN
 </th>
