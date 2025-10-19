@@ -144,15 +144,15 @@
                         <tbody>
                             {{range .SSRs}}
                             <tr>
-                                <td>{{.Type}}</td>
+                             <!--   <td>{{.Type}}</td>
                                 <td>{{.GivenNameNumber}}</td>
                                 <td>{{.LastNameNumber}}</td>
                                 <td>{{.SegmentNumber}}</td>
                                 <td>{{.StatusCode}}</td>
                                 <td>{{.AirlineCode}}</td>
                                 <td>{{.LineNumber}}</td>
-                                <td>{{.Remark}}</td>
-                               <td> SSR {{.StatusCode}}{{.AirlineCode}}{{.LineNumber}} {{.Remark}} {{.GivenNameNumber}}.{{.LastNameNumber}} </td>
+                                <td>{{.Remark}}</td> -->
+                               <td> SSR {{.Type}} {{.StatusCode}}{{.AirlineCode}}{{.LineNumber}} {{.Remark}} {{.GivenNameNumber}}.{{.LastNameNumber}} </td>
                             </tr>
                             {{end}}
                         </tbody>
