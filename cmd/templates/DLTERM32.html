@@ -67,6 +67,12 @@
     </tr>                        
 {{end}}
 
+{{range .SSRs}}
+                            <tr>
+                            <td> SSR {{.Type}} {{.LineNumber}}{{.AirlineCode}}{{.LineNumber}} {{.Remark}} {{.GivenNameNumber}}.{{.LastNameNumber}} </td>
+                            
+                            </tr>
+                            {{end}}
 </tbody>
 
 </table>
@@ -144,7 +150,7 @@
                         <tbody>
                             {{range .SSRs}}
                             <tr>
-                                <td>{{.Code}}</td>
+                                <td>{{.Type}}</td>
                                 <td>{{.GivenNameNumber}}</td>
                                 <td>{{.LastNameNumber}}</td>
                                 <td>{{.SegmentNumber}}</td>
