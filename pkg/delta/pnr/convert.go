@@ -123,6 +123,7 @@ func convertFlags(res RetrievePnrResponse, pnr *PNR) {
 		pnr.Flags = append(pnr.Flags, Flag{
 			Name:  flag.Name,
 			Value: flag.Value,
+			Type:	flag.Type,
 		})
 	}
 }
@@ -136,6 +137,7 @@ func convertTickets(res RetrievePnrResponse, pnr *PNR) {
 				IssueDate:              ticket.IssueDate,
 				Status:                 ticket.Status,
 				PassengerName:          pax.Name.LastName + "/" + pax.Name.FirstName,
+				Type:					ticket.Type,
 				NumCoupons:             uint64(len(ticket.TicketCoupons.DomainObjectList.DomainObject)),
 				ValidatedAgainstCoupon: couponsMatchFlights(res, ticket.Number),
 				PlaceOfIssue:	ticket.PlaceOfIssue,

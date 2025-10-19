@@ -97,6 +97,7 @@ type SSR struct {
 type Flag struct {
 	Name  string
 	Value string
+	Type	string
 }
 
 type Ticket struct {
@@ -105,6 +106,7 @@ type Ticket struct {
 	IssueDate              string
 	Status                 string
 	PassengerName          string
+	Type				string
 	NumCoupons             uint64
 	ValidatedAgainstCoupon bool
 	PlaceOfIssue   string
