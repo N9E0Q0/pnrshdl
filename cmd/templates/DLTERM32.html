@@ -28,8 +28,7 @@
 <tr>
 
 {{range .PNR.Flights}}
-<td>&nbsp;DL{{.FlightNumber}}{{.ClassOfService}} 27OCT1 {{.OriginAirportCode}}{{.DestinationAirportCode}} {{.CurrentActionCode}}1 &nbsp; 100P &nbsp; 430P &nbsp; STBY &nbsp; CI &nbsp;1B
-<BR>&nbsp;&nbsp;OPERATED BY .OperatingAirlineCode/QUOTE AS DL CNXN
+<td>&nbsp;{{.OperatingAirlineCode}}{{.FlightNumber}}{{.ClassOfService}} 27OCT1 {{.OriginAirportCode}}{{.DestinationAirportCode}} {{.CurrentActionCode}}1 &nbsp; 100P &nbsp; 430P &nbsp; STBY &nbsp; CI &nbsp;1B
 </td>
 </tr>
 {{end}}
@@ -59,9 +58,19 @@
                     
                 </tr>
             {{end}}
-                            
-                            
+               
+               
+ {{range .PNR.Passengers}}
+<tr>
+<td>
+TKT >>{{LastNIN}}. 
+{{end}}
 
+{{range .PNR.Tickets}}
+{{.Number}} {{.NumCoupons}}//{{.IssueDate}}
+</tr>                           
+    </td>                        
+{{end}}
 </tbody>
 
 </table>
