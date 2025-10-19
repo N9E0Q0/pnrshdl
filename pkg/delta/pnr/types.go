@@ -92,6 +92,12 @@ type SSR struct {
 	AirlineCode string
 	Type        string
 	Remark      string
+	LineNumber      string `xml:"lineNumber"`
+	Code            string `xml:"code"`
+	GivenNameNumber string `xml:"givenNameNumber"`
+	LastNameNumber  string `xml:"lastNameNumber"`
+	SegmentNumber   string `xml:"segmentNumber"`
+	StatusCode      string `xml:"statusCode"`
 }
 
 type Flag struct {

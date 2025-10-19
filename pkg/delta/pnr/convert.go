@@ -106,8 +106,15 @@ func convertPassengers(res RetrievePnrResponse, pnr *PNR) {
 			}
 
 			convertedPax.SSRs = append(convertedPax.SSRs, SSR{
+				AirlineCode:	ssr.AirlineCode,
 				Remark: ssr.Remarks.Remark,
 				Type:   ssr.Code,
+				LineNumber:	ssr.LineNumber,
+				Code:	ssr.Code,
+				GivenNameNumber:	ssr.GivenNameNumber,
+				LastNameNumber:	ssr.LastNameNumber,
+				SegmentNumber:	ssr.SegmentNumber,
+				StatusCode:	ssr.StatusCode,
 			})
 		}
 		pnr.Passengers = append(pnr.Passengers, convertedPax)
