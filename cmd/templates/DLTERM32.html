@@ -65,8 +65,8 @@
 TKT >>
 {{range .PNR.Tickets}}
 {{.Number}} {{.NumCoupons}}//{{.IssueDate}}
-</tr>                           
-    </td>                        
+</td>                           
+    </tr>                        
 {{end}}
 </tbody>
 
@@ -153,7 +153,7 @@ TKT >>
                                 <td>{{.StatusCode}}</td>
                                 <td>{{.AirlineCode}}</td>
                                 <td>{{.LineNumber}}</td>
-                      <!--          <td>{{.Remarks.Remark}} -->
+                               <td>{{.Remarks.Remark}}</td>
                             </tr>
                             {{end}}
                         </tbody>
