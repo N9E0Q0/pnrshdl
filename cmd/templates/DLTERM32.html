@@ -60,13 +60,9 @@
             {{end}}
                
                
-<!--> {{range .PNR.Passengers}} -->
 <tr>
 <td>
 TKT >>
-<!-- {{.LastNIN}}. 
-{{end}} -->
-
 {{range .PNR.Tickets}}
 {{.Number}} {{.NumCoupons}}//{{.IssueDate}}
 </tr>                           
