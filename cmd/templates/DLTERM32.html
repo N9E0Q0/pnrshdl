@@ -59,12 +59,9 @@
                 </tr>
             {{end}}
                
-               
+    {{range .PNR.Tickets}}          
 <tr>
-<td>
-TKT >>
-{{range .PNR.Tickets}}
-{{.Number}} {{.NumCoupons}}//{{.IssueDate}}
+<td>TKT >> {{.Number}} {{.NumCoupons}} {{.IssueDate}}
 </td>                           
     </tr>                        
 {{end}}
