@@ -27,19 +27,14 @@
 </tr>
 <tr>
 
+{{range .PNR.Flights}}
 <td width="20px"></td>
-<th colspan="7">DL9999Y 27OCT1 AAAZZZ HK1 &nbsp; 100P &nbsp; 430P &nbsp; STBY &nbsp; CI &nbsp;1B
+<th colspan="7">DL{{.FlightNumber}}{{.CurrentActionCode}} 27OCT1 {{.OriginAirportCode}}{{.DestinationAirportCode}} HK1 &nbsp; 100P &nbsp; 430P &nbsp; STBY &nbsp; CI &nbsp;1B
 <BR>&nbsp;&nbsp;OPERATED BY .OperatingAirlineCode/QUOTE AS DL CNXN
 </th>
 </tr>
-
-<tr>
-<td>
-{{range .PNR.Flights}}
-            {{.MarketingAirlineCode}}{{.FlightNumber}} {{.OriginAirportCode}} ✈️ {{.DestinationAirportCode}} <span class="badge bg-primary">{{.CurrentActionCode}}</span></h5>
 {{end}}
-</td>
-</tr>
+
 
 
 <tr>
