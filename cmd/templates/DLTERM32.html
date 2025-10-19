@@ -17,8 +17,7 @@
 
 {{range .PNR.Passengers}}
 <tr>
-<td width="20px">{{.LastNIN}}.</td>
-<td>{{.Name}}</td>
+<td>{{.LastNIN}}. {{.Name}}</td>
 </tr>
 {{end}}
 
@@ -28,8 +27,7 @@
 <tr>
 
 {{range .PNR.Flights}}
-<td width="20px"></td>
-<td>DL{{.FlightNumber}}{{.ClassOfService}} 27OCT1 {{.OriginAirportCode}}{{.DestinationAirportCode}} {{.CurrentActionCode}}1 &nbsp; 100P &nbsp; 430P &nbsp; STBY &nbsp; CI &nbsp;1B
+<td>&nbsp;DL{{.FlightNumber}}{{.ClassOfService}} 27OCT1 {{.OriginAirportCode}}{{.DestinationAirportCode}} {{.CurrentActionCode}}1 &nbsp; 100P &nbsp; 430P &nbsp; STBY &nbsp; CI &nbsp;1B
 <BR>&nbsp;&nbsp;OPERATED BY .OperatingAirlineCode/QUOTE AS DL CNXN
 </td>
 </tr>
@@ -49,6 +47,7 @@
 <tr>
 <td>GEN FAX- **SSRS PRESENT**</td>
 </tr>
+
 <tr>
 <td>TKT-TK/TE/TL30/17OCT1539/ATL</td>
 </tr>
