@@ -51,10 +51,13 @@
 <tr>
 <td>TKT-TK/TE/TL30/17OCT1539/ATL</td>
 </tr>
- 
-                            <tr>
-                                <td>.Type-&nbsp;.Remark</td>
-                            </tr>
+
+ {{range .PNR.Remarks}}
+                <tr>
+                    <td><strong>{{.RemarkType}}</strong></td>
+                    <td>{{.FreeFormText}}</td>
+                </tr>
+            {{end}}
                             
                             
 
@@ -176,7 +179,7 @@
             </tbody>
         </table>
 
-        <h4>Taxes + Carrier-Imposed Fees</h4> -->
+        <h4>Taxes + Carrier-Imposed Fees</h4>
         <table class="table">
             <thead>
                 <tr>
@@ -208,7 +211,7 @@
             {{end}}
             </tbody>
         </table>
-
+-->
         <h3>Tickets</h3>
         {{range .PNR.Tickets}}
         <div class="card">

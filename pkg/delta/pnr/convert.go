@@ -135,7 +135,7 @@ func convertTickets(res RetrievePnrResponse, pnr *PNR) {
 				ExpirationDate:         ticket.ExpirationDate,
 				IssueDate:              ticket.IssueDate,
 				Status:                 ticket.Status,
-				PassengerName:          pax.Name.FirstName + " " + pax.Name.LastName,
+				PassengerName:          pax.Name.LastName + "/" + pax.Name.FirstName,
 				NumCoupons:             uint64(len(ticket.TicketCoupons.DomainObjectList.DomainObject)),
 				ValidatedAgainstCoupon: couponsMatchFlights(res, ticket.Number),
 				PlaceOfIssue:	ticket.PlaceOfIssue,
