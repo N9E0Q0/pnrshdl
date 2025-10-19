@@ -9,6 +9,7 @@
     {{ end }}
 	<hr />
 
+<strong>
 <table style="width: 650px;" class="yellowtable">
 <tbody>
 <tr>
@@ -54,8 +55,8 @@
 
  {{range .PNR.Remarks}}
                 <tr>
-                    <td><strong>{{.RemarkType}}</strong></td>
-                    <td>{{.FreeFormText}}</td>
+                    <td>{{.RemarkType}} {{.FreeFormText}}</td>
+                    
                 </tr>
             {{end}}
                             
@@ -65,7 +66,7 @@
 
 </table>
 
-
+</strong>
 
 
     <div class="row">
