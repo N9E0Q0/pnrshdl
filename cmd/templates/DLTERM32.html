@@ -69,7 +69,7 @@
       <div class="col">
         <h3>Flights</h3>
         {{range .PNR.Flights}}
-            <h5><strong>{{.MarketingAirlineCode}}{{.FlightNumber}}</strong> {{.OriginAirportCode}} ✈️ {{.DestinationAirportCode}} <span class="badge bg-primary">{{.CurrentActionCode}}</span></h5>
+ <!--           <h5><strong>{{.MarketingAirlineCode}}{{.FlightNumber}}</strong> {{.OriginAirportCode}} ✈️ {{.DestinationAirportCode}} <span class="badge bg-primary">{{.CurrentActionCode}}</span></h5>
             <table class="yellowtable">
                 <tbody>
                     <tr>
@@ -117,7 +117,7 @@
                         <td>{{.ClassOfService}}</td>
                     </tr>
                 </tbody>
-            </table>
+            </table> -->
         {{end}}
 
         <h3>Passengers</h3>
@@ -130,7 +130,7 @@
                     <h5>{{.Name}} <span class="badge bg-secondary">Not Checked In</span> <span class="badge bg-primary">{{.Status}}</span></h5>
                     {{end}}
         
-                    <h6>Filtered SSRs</h6>
+           <!--         <h6>Filtered SSRs</h6>
                     <table class="table">
                         <tbody>
                             {{range .SSRs}}
@@ -140,13 +140,13 @@
                             </tr>
                             {{end}}
                         </tbody>
-                    </table>
+                    </table> -->
                 </div>
             </div>
             <br />
         {{end}}
 
-        <h3>Fare</h3>
+      <!--  <h3>Fare</h3>
         <table class="table">
             <tbody>
                 <tr>
@@ -176,7 +176,7 @@
             </tbody>
         </table>
 
-        <h4>Taxes + Carrier-Imposed Fees</h4>
+        <h4>Taxes + Carrier-Imposed Fees</h4> -->
         <table class="table">
             <thead>
                 <tr>
