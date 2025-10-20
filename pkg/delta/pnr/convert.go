@@ -154,8 +154,6 @@ func convertTickets(res RetrievePnrResponse, pnr *PNR) {
 				IssueCity:	ticket.IssueCity,
 				IssueLocation:	ticket.IssueLocation,
 				IssuingAgentId:	ticket.IssuingAgentId,
-				CheckInTooEarly: ticket.CheckInTooEarly,
-				ProhibitedSSRFound:	ticket.ProhibitedSSRFound,
 			})
 		}
 	}

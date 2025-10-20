@@ -123,8 +123,6 @@ type Ticket struct {
 	IssueCity      string
 	IssueLocation  string
 	IssuingAgentId string
-	CheckInTooEarly string
-	ProhibitedSSRFound	string
 }
 
 type Fare struct {
