@@ -54,6 +54,10 @@ type Flight struct {
 	SchedChangeType       string
 	BrandAssociatedCabinId string
 	EticketEligible			string
+	DayChange               string
+	RedEyeFlag              string
+	DisplayBrandGradient	string
+	DepartureDateTime      string
 }
 
 type Passenger struct {

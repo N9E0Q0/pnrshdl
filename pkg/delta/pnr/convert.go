@@ -61,6 +61,10 @@ func convertFlights(res RetrievePnrResponse, pnr *PNR) {
 				AccumulatedFlightTime: flight.AccumulatedFlightTime,
 				SchedChangeType:       flight.SchedChangeType,
 				EticketEligible:		flight.EticketEligible,
+				DayChange:               flight.DayChange,
+				RedEyeFlag:              flight.RedEyeFlag,
+				DisplayBrandGradient:	flight.DisplayBrandGradient,
+				DepartureDateTime:       flight.DepartureDateTime,
 			})
 		}
 	}
