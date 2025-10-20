@@ -102,6 +102,8 @@ type SSR struct {
 	LastNameNumber  string
 	SegmentNumber   string
 	StatusCode      string
+	CheckInTooEarly string
+	ProhibitedSSRFound	string
 }
 
 type Flag struct {
