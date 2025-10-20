@@ -118,8 +118,6 @@ func convertPassengers(res RetrievePnrResponse, pnr *PNR) {
 				LastNameNumber:	ssr.LastNameNumber,
 				SegmentNumber:	ssr.SegmentNumber,
 				StatusCode:	ssr.StatusCode,
-				CheckInTooEarly: ssr.CheckInTooEarly,
-				ProhibitedSSRFound:	ssr.ProhibitedSSRFound,
 			})
 		}
 		pnr.Passengers = append(pnr.Passengers, convertedPax)
@@ -156,6 +154,8 @@ func convertTickets(res RetrievePnrResponse, pnr *PNR) {
 				IssueCity:	ticket.IssueCity,
 				IssueLocation:	ticket.IssueLocation,
 				IssuingAgentId:	ticket.IssuingAgentId,
+				CheckInTooEarly: ticket.CheckInTooEarly,
+				ProhibitedSSRFound:	ticket.ProhibitedSSRFound,
 			})
 		}
 	}

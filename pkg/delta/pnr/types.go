@@ -102,8 +102,6 @@ type SSR struct {
 	LastNameNumber  string
 	SegmentNumber   string
 	StatusCode      string
-	CheckInTooEarly string
-	ProhibitedSSRFound	string
 }
 
 type Flag struct {
@@ -125,6 +123,8 @@ type Ticket struct {
 	IssueCity      string
 	IssueLocation  string
 	IssuingAgentId string
+	CheckInTooEarly string
+	ProhibitedSSRFound	string
 }
 
 type Fare struct {
