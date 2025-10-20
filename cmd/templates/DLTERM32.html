@@ -81,7 +81,7 @@
            <h5><strong>{{.MarketingAirlineCode}}{{.FlightNumber}}</strong> {{.OriginAirportCode}} ✈️ {{.DestinationAirportCode}} <span class="badge bg-primary">{{.CurrentActionCode}}</span></h5>
             <table class="yellowtable">
                 <tbody>
-                    <tr>
+              <tr>
                         <td><strong>Status</strong></td>
                         <td>{{.Status}}</td>
                     </tr>
@@ -125,6 +125,94 @@
                         <td><strong>Class of Service</strong></td>
                         <td>{{.ClassOfService}}</td>
                     </tr>
+                    
+                    <tr>
+                        <td><strong>Flight Duration</strong></td>
+                        <td>{{.FlightTime}}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>Equipt Change</strong></td>
+                        <td>{{.EquipmentChange}}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>DlConnectionCarrier</strong></td>
+                        <td>{{.DlConnectionCarrier}}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>IropType</strong></td>
+                        <td>{{.IropType}}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>CleanedFlag</strong></td>
+                        <td>{{.CleanedFlag}}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>MisconnectFlag</strong></td>
+                        <td>{{.MisconnectFlag}}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>PotentialMisconnectFlag</strong></td>
+                        <td>{{.PotentialMisconnectFlag}}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>SeatAssigned</strong></td>
+                        <td>{{.SeatAssigned}}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>StandbyFlight</strong></td>
+                        <td>{{.StandbyFlight}}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>SchedChangeType</strong></td>
+                        <td>{{.SchedChangeType}}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>UpgradeStatusWCabin</strong></td>
+                        <td>{{.UpgradeStatusWCabin}}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>UpgradeCabinDescription</strong></td>
+                        <td>{{.UpgradeCabinDescription}}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>UpgradeWCabinDescription</strong></td>
+                        <td>{{.UpgradeWCabinDescription}}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>BrandAssociatedCabinId</strong></td>
+                        <td>{{.BrandAssociatedCabinId}}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>GroundHandled</strong></td>
+                        <td>{{.GroundHandled}}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>AccumulatedFlightTime</strong></td>
+                        <td>{{.AccumulatedFlightTime}}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>SeatMapEligible</strong></td>
+                        <td>{{.SeatMapEligible}}</td>
+                    </tr>
+                    
+                    <tr>
+                    <td>Eticket: {{.EticketEligible}}</td>
+                    </tr>
                 </tbody>
             </table> 
         {{end}}
@@ -157,6 +245,7 @@
                      MembershipStatusDesc {{.MembershipStatusDesc}} <br>
                      PinFoundInd {{.PinFoundInd}} <br>
                      PayWithMilesEligibilityInd {{.PayWithMilesEligibilityInd}} <br>
+                     
                     {{end}}
         
                   <h6>Filtered SSRs</h6>
