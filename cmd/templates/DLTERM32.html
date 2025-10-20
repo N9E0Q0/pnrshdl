@@ -137,6 +137,26 @@
                     <h5>{{.Name}} <span class="badge bg-success">Checked In</span> <span class="badge bg-primary">{{.Status}}</span></h5>
                     {{else}}
                     <h5>{{.Name}} <span class="badge bg-secondary">Not Checked In</span> <span class="badge bg-primary">{{.Status}}</span></h5>
+                    
+                    CID{{.CustomerID}}<br>
+                     FNIN{{.FirstNIN}}<br> 
+                     LNIN{{.LastNIN}} <br> 
+                     PTC {{.Ptc}} <br> 
+                     Selectee {{.Selectee}} <br> 
+                     Prem {{.PremiumPassengerIndicator}} <br> 
+                     Exit Row {{.ExitRowEligible}} <br> 
+                     CheckedInOnALS {{.CheckedInOnALS}} <br> 
+                     DoNotBoard {{.DoNotBoard}} <br> 
+                     SkyClub ELigible {{.SkyClubPurchaseEligible}} <br> 
+                     Locked Account {{.AcctLocked}} <br> 
+                     PasswordCreated {{.PasswordCreated}} <br> 
+                     Language Prompt {{.LanguagePromptIndicator}} <br> 
+                     ProgramName {{.ProgramName}} <br> 
+                     ID {{.ID}} <br>
+                     AliasAcctFoundInd {{.AliasAcctFoundInd}} <br>
+                     MembershipStatusDesc {{.MembershipStatusDesc}} <br>
+                     PinFoundInd {{.PinFoundInd}} <br>
+                     PayWithMilesEligibilityInd {{.PayWithMilesEligibilityInd}} <br>
                     {{end}}
         
                   <h6>Filtered SSRs</h6>
