@@ -62,8 +62,10 @@ type Flight struct {
 	IndustryCode			string
 	Description			string
 	NumPassengers			string
-	AirlineName				string
-	AirlineCode				string
+	AirlineName			string
+	AirlineCode			string
+	OriginName			string
+	OriginCityServed	string
 }
 
 type Passenger struct {

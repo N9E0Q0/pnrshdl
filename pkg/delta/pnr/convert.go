@@ -29,6 +29,8 @@ func convertFlights(res RetrievePnrResponse, pnr *PNR) {
 		for _, flight := range itin.Flights.DomainObjectList.DomainObject {
 			pnr.Flights = append(pnr.Flights, Flight{
 				OriginAirportCode:      flight.Origin.Code,
+				OriginCityName:			flight.Origin.Name,
+				OriginCityServed		flight.Origin.CityServed,
 				DestinationAirportCode: flight.Destination.Code,
 				CurrentActionCode:      flight.CurrentActionCode,
 				PreviousActionCode:     flight.PreviousActionCode,
