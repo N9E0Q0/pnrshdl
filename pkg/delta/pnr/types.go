@@ -64,7 +64,7 @@ type Flight struct {
 	NumPassengers			string
 	AirlineName			string
 	AirlineCode			string
-	OriginName			string
+	OriginCityName			string
 	OriginCityServe	string
 }
 
