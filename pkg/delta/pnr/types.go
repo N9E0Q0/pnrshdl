@@ -58,6 +58,10 @@ type Flight struct {
 	RedEyeFlag              string
 	DisplayBrandGradient	string
 	DepartureDateTime      string
+	DeltaCode				string
+	IndustryCode			string
+	Description			string
+	NumPassengers			string
 }
 
 type Passenger struct {

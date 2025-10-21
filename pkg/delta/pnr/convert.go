@@ -65,6 +65,10 @@ func convertFlights(res RetrievePnrResponse, pnr *PNR) {
 				RedEyeFlag:              flight.RedEyeFlag,
 				DisplayBrandGradient:	flight.DisplayBrandGradient,
 				DepartureDateTime:       flight.DepartureDateTime,
+				DeltaCode:				flight.Equipment.DeltaCode,
+				IndustryCode:			flight.Equipment.IndustryCode,
+				Description:			flight.Equipment.Description,
+				NumPassengers:			flight.Equipment.NumPassengers,
 			})
 		}
 	}
