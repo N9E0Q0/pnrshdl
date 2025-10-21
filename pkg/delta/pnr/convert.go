@@ -69,6 +69,8 @@ func convertFlights(res RetrievePnrResponse, pnr *PNR) {
 				IndustryCode:			flight.Equipment.IndustryCode,
 				Description:			flight.Equipment.Description,
 				NumPassengers:			flight.Equipment.NumPassengers,
+				AirlineName:			flight.Airline.Name,
+				AirlineCode:				flight.Airline.Code,
 			})
 		}
 	}
